@@ -8,10 +8,12 @@ function App() {
     const fetchUrl = requests.fetchMembers;
 
     useEffect(() => {
-        const data = async() => {
-            await axios.get(fetchUrl);
+        const fetchData = async () => {
+            const response = axios.get(fetchUrl);
+            console.log("response : ", response);
         }
-        console.log(data);
+        fetchData();
+        console.log(fetchUrl);
     }, []);
 
 
