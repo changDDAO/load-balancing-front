@@ -2,10 +2,10 @@ import {useEffect, useState} from 'react'
 import './App.css'
 import Base from "./component/Base.jsx";
 import axios from "./api/axios.js";
-import requests from "./api/request.js";
+import memberRequests from "./api/request.js";
 
 function App() {
-    const fetchUrl = requests.fetchMembers;
+    const fetchUrl = memberRequests.fetchMembers;
 
     useEffect(() => {
         const fetchData = async () => {
