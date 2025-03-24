@@ -3,6 +3,7 @@ import './App.css'
 import Base from "./component/Base.jsx";
 import axios from "./api/axios.js";
 import memberRequests from "./api/request.js";
+import {Button} from "@mui/material";
 
 function App() {
     const id = 2;
@@ -20,7 +21,9 @@ function App() {
 
   return (
     <>
-        <Base/>
+        <Button variant="contained">전체 Team 조회</Button>
+        <Button style={{marginLeft:"13px"}} variant="outlined">전체 Member 조회</Button>
+        {/*<Base/>*/}
     </>
   )
 }
